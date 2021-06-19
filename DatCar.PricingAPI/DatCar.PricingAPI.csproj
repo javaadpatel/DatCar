@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>0a39e8eb-1a58-4a5f-9d41-fe50c8d7aa23</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerfileContext>..\DatCar</DockerfileContext>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.16" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.14" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DatCar.Core\DatCar.Core.csproj" />
+    <ProjectReference Include="..\DatCar.PricingEngine\DatCar.PricingEngine.csproj" />
+    <ProjectReference Include="..\DatCar.Services\DatCar.Services.csproj" />
+  </ItemGroup>
+
+
+</Project>
